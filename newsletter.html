@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="newsletter.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Newsletter Form -->
+        <div class="newsletter-form" id="newsletterForm">
+            <!-- Mobile illustration at top -->
+            <div class="illustration-section mobile-only">
+            
+            </div>
+            
+            <div class="form-section">
+                <h1>Stay updated!</h1>
+                <p class="subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+                
+                <ul class="features-list">
+                    <li>
+                        <div class="tick-icon"></div>
+                        Product discovery and building what matters
+                    </li>
+                    <li>
+                        <div class="tick-icon"></div>
+                        Measuring to ensure updates are a success
+                    </li>
+                    <li>
+                        <div class="tick-icon"></div>
+                        And much more!
+                    </li>
+                </ul>
+
+                <form id="subscriptionForm" novalidate>
+                    <div class="input-group">
+                        <label for="email">Email address</label>
+                        <span class="error-message" id="errorMessage">Valid email required</span>
+                        <input type="email" id="email" name="email" placeholder="email@company.com" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+            
+            <!-- Desktop illustration -->
+            <div class="illustration-section desktop-only">
+                <div class="illustration-placeholder"></div>
+            </div>
+        </div>
+
+        <!-- Success Message -->
+        <div class="success-message hidden" id="successMessage">
+            <div class="success-icon">
+                <div class="success-tick"></div>
+            </div>
+            <h2>Thanks for <span id="span-down">subscribing!</span></h2>
+            <p>A confirmation email has been sent to <strong id="confirmedEmail">ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+            <button class="dismiss-btn" id="dismissBtn">Dismiss message</button>
+        </div>
+    </div>
+
+    <script src="newsletter.js"></script>
+</body>
+</html>
